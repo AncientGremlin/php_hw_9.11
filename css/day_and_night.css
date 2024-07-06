@@ -1,0 +1,127 @@
+.day_div {
+    background-color: #fdffe0db !important;
+    color: #261f19;
+
+}
+.day_div a{
+    color: #1e4224;
+    font-weight: bold;
+}
+
+.night_div {
+    background-color:#1c1c1cf1 !important;
+    color: antiquewhite;
+}
+.night_div a{
+    color:  antiquewhite;
+    font-weight: bold;
+}
+.day_div, .night_div{ 
+    min-width: fit-content;
+    font-size: 17px;
+}
+
+.day_div h1,
+.night_div h1{
+    font-size: 23px;
+    font-weight: bolder;
+/* fffft00-o999999 - правка рептилоида священна! Даже не пытайтесь узнать, что же игуан 
+подразумевал! PS привет программистам, коты которых также любят лежать на клавиатуре...
+и фиг их сгонишь*/ 
+    text-align: center;
+}
+.day_div h2,
+.night_div h2{
+    font-size: 19px;
+    font-weight: bolder;
+}
+.day_div p,
+.night_div p{
+    margin:10px;
+}
+
+
+.examples{
+    margin: 10px;
+    width: fit-content;
+    display: inline-block;
+    background: rgba(146, 146, 146, 0.15);
+    border: 1px solid rgba(130, 129, 129, 0.3);
+    padding: 5px;
+}
+.examples::before{
+    content: "Примеры использования:";
+ /*   text-transform: uppercase; */
+    font-weight: 600;
+    width: 100%;
+}
+.code_div{
+    background: #8da17d82;
+    padding: 10px;
+    margin: 10px;
+}
+.code_div pre{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.code_div .copy{
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: url('../images/cursor1.png'), pointer;
+    padding: 5px;
+}
+
+.task_p{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: url('../images/cursor1.png'), pointer;
+}
+
+#task2{
+    margin-left: 22%;
+    width: fit-content;
+}
+#task2_nav{
+    width: 15%;
+    position: fixed;
+    border: 2px solid #00000052;
+    background-color: #c1c1c14a;
+    padding: 5px;
+}
+#consoleLog_nav,
+#alert_nav,
+#prompt_nav{
+    padding-bottom:31px;
+}
+#task5_button{
+    margin: 20px auto 20px auto;
+    appearance: none;
+    border: 2px solid #00000040;
+    border-radius: 1px;
+    background: #466C43F5;
+    color: #e7e7e7;
+    padding: 8px 16px;
+    font-size: 16px;
+    display: block;
+}
+.trafficLights{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: 2px solid #1c281cb2;
+    background-color: #8e918e36;
+    padding: 30px;
+}
+.table1{
+    background-color: #80808030;
+}
+.table1 th,
+.table1 td{
+    padding: 10px;
+    border: 2px solid #ffffff4d;
+
+}

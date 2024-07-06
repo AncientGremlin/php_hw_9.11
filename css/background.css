@@ -1,0 +1,26 @@
+body{
+    background-image: url('../images/brian-patrick-tagalog_full.jpg');
+    background-position: 50% 50%; /* выравнивание по центру в обоих плоскостях */
+    background-repeat: no-repeat;   /* не повторяется */
+    background-color: black; /* я параноик, ага: вдруг не прогрузится и ещё мало ли */
+    background-size: cover; /* фон меняет масштаб, при изменении размеров окна ( или контейнера - на будущее ) */
+    background-attachment: fixed;   /* фиксируем картинку, чтобы при прокрутке изображение не уехало */
+    cursor: url('../images/cursor.png'), pointer;
+}
+/* для данного дз пока рано. Будем думать о мобильниках сильно позже (и то не факт)
+о нестандартном экране - тоже
+@media only screen and (max-width: 767px) {
+    body {  
+        background-image: url('../images/brian-patrick-tagalog_ful');
+    }   
+}
+*/
+a {
+    cursor: url('../images/cursor1.png'), pointer; 
+}
+@media  (max-width: 1080px) {
+    body {  
+        background-image: url('../images/brian-patrick-tagalog_1920_1080.jpg');
+    }   
+}
+

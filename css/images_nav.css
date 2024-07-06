@@ -1,0 +1,78 @@
+.images_nav{
+    margin: 20px auto 20px auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.image_nav {
+    width: 200px;
+    height: 125px;
+    font-size: 20px;
+    margin:30px;
+    position: relative;
+    
+}
+
+.image_nav a,
+.image_nav span{
+    display: inline-block;
+    text-align: right;
+    color: antiquewhite;
+    width: 98%;
+    padding-right: 2%;
+    height: 100%;
+    text-decoration: none;
+    text-shadow: -2px -1px 0 #000000ab, 2px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.image_nav a:hover{
+    color:rgb(207, 195, 135);
+    transition: 0.5s;
+    background: #faebd745;
+}
+
+#tasks_img{
+    background-repeat: no-repeat; 
+    background-image: url('../images/tasks.jpg');
+}
+#tasks_ul{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+#tasks_ul a{
+    text-align: center;
+}
+#tasks_ul li:hover{
+    background-color: rgba(62, 62, 62, 0.99);
+}
+#tasks_img:hover #tasks_span{
+    display: none;
+}
+
+#tasks_img:hover  {
+    background-image: url('../images/tasks2.jpg');
+}
+
+#tasks_img:hover #tasks_ul{
+    display: block;
+}
+
+#about_img{
+    background-repeat: no-repeat; 
+    background-image: url('../images/about.jpg');
+}
+
+
+#contacts_img{
+    background-repeat: no-repeat; 
+    background-image: url('../images/contacts.jpg');
+}
+
+#game_img{
+    background-repeat: no-repeat; 
+    background-image: url('../images/game.jpeg');
+}

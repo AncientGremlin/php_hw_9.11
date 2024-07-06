@@ -1,0 +1,44 @@
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+body{
+    font-family: initial !important;
+    line-height: initial !important;
+}
+.night_div .btn-link {
+    color: #ecf5ff;
+  }
+ .night_div .btn-link:hover {
+    background-color: rgba(62, 62, 62, 0.99);
+}
+ .day_div .btn-link{
+    color: #261f19;
+  }
+.btn-link{
+    width: 100%;
+  }
+.day_div .btn-link:hover {
+    background-color: #fff8efeb;
+  }
+
+.game-card {
+    height: 80vh;
+  }
+.container{
+    max-width: 100%;
+}
+
+#notSaw{
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+}
+
+#jokeField{
+    font-style: italic;
+    font-size: small;
+}
+nav {
+    z-index: 10;
+}

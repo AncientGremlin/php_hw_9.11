@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru" class="scrollbar_style">
+<head>
+    <meta charset="utf-8">
+    <!--- подключаем стили, пока обойдемся без шрифтов -->
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/scrollbar_style.css">   
+    <link rel="stylesheet" href="../css/day_and_night.css">   
+    <link rel="stylesheet" href="../css/borders.css">   
+    <link rel="stylesheet" href="../css/footer.css">      
+    <link rel="stylesheet" href="../css/others.css">   
+  <!-- пока не актуально   <link rel="stylesheet" href="./css/links.css">  -->
+    <!-- закончили подключать стили, полззззем дальше -->
+    <script defer src="../js/day_or_night.js"></script>
+    <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
+        пихать скрипт в конец страницы )-->   
+    <title>Чешуя и когти. О нас.</title>
+</head>
+<body >
+    <!-- шапка  -->
+    <header>
+        <!-- навигация  -->
+        <nav>        
+            <ul class="navigation_in_header">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./game.html">Угадайка</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li class="show_drop_list">
+                    <span>Сменить тему</span>
+                    <ul class="drop_down_list">
+                        <li id="day_style"><a href="#">Дневная</a></li>
+                        <li id="night_style"><a href="#">Ночная</a></li>
+                    </ul>
+                </li>              
+            </ul>
+        </nav>
+    </header>
+    <!-- пошел контент  -->
+    <main>
+        <div class="night_div main_content">
+            <h1>О нас!</h1>
+           <p>ООО Чешуя и когти (Общество с отсутствующей ответственностью) занимаемся многосторонней деятельностью, 
+            связанной с поддержанием и развитием всех существующих рептилий. Чтобы лучше понять специфику нашей деятельности,
+            просто ознакомьтесь со списком наших работ.</p>
+            <ul style="list-style-type: square;">
+                <li>Именно благодаря нам космический корабль Dragon X получил своё название <span class="comment">(а вы 
+                    думали каким образом Илон Маск купил Twitter, запрещенный в РФ?)</span></li>
+                <li>Мы успешно создали кожезаменитель и всячески лоббируем защитников животных во благо сохранения
+                    бесценных жизней аллигаторов <span class="comment">(и, безусловно, сохранения еды аллигаторов)</span> 
+                </li>    
+                <li>Наша сеть <strong>"салонов красоты"</strong> уже более 80 лет обеспечивает маскировку рептилоидов, а наши
+                    специалисты по пиару успешно скрывают их присутсвие, спихивая доказательства в раздел лженауки и 
+                    теории заговоров <span class="comment">(что касается плоскоземельщиков: это не мы!)</span>
+                </li>
+                <li>
+                    Ввиду того, что в книгах цикла "Льда и пламени" слишком мало драконов, мы ежедневно следим, чтобы 
+                    Дж.Мартин продолжал прокрастинировать. Как следствие - сериал "Игра престолов" уступил место на экранах
+                    сериалу "Дом Дракона" <span class="comment">(в принципе, пора бы закругляться, но нашим специалистам 
+                    очень понравилось)</span>. 
+                </li>
+                <li>
+                    Остров Комодо был закрыт в 2020ом году, власти Индонезии готовятся законсервировать остров. Очень скоро
+                    великолепные комодские вараны будут жить спокойно! <span  class="comment">( а у рептилоидов появится место, где они
+                    смогут отдыхать без всякой маскировки)  </span> </li>
+                <li>Именно мы посадили в режиссерское кресло фильма "Тор: Любовь и гром" Тайку Вайтити, <a href="https://www.sport-express.ru/zozh/movies/news/tor-lyubov-i-grom-kris-hemsvort-o-filme-tayki-vaytiti-2207028/">
+                    похоронив репутацию</a> Тора, как супергероя <span class="comment">(заказано Йормунгандом, оплачено Локи)</span> .
+                </li>
+                <li>И, наконец, данный сайт! Приведем же фотографию настоящего автора идеи контента, 
+                    который ежедневно следил, чтобы <del>человеческий раб</del> наш специалист продолжал кодить:
+                    
+                </li>
+                
+            </ul>
+            <img class="border1" src="../images/p3.jpg" alt="Истинный автор сайта" style="display: flex; margin-left: auto;
+                margin-right: auto;">
+        </div>
+    </main>
+    <!-- подвал. Оставим Skillfactory: красиво стоит -->
+    <footer>
+        <span>&copy;&nbsp;Skillfactory</span>
+        <span> Background by <a href="https://unsplash.com/@briantagalog?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brian Patrick Tagalog</a> 
+            on <a href="https://unsplash.com/photos/grayscale-photography-of-rock-formation-_8hGFBxWD0A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </span>
+        <span>Resources for icon from <a href="https://ru.freepik.com/search">freepik.com</a> and composed by AncientGremlin</span>
+
+    </footer>
+</body>
+</html>

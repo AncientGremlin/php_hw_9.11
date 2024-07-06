@@ -1,0 +1,12 @@
+details[open] div {
+    cursor: url('../images/cursor1.png'), pointer;
+    animation: spoiler 1s;
+    background-color: #a8a8a8cd;
+  }
+  @keyframes spoiler {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+summary{
+    cursor: url('../images/cursor1.png'), pointer;
+}

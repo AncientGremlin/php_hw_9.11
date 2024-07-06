@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- До того, как добавили lang, validator ругался. А теперь: 
+    Document checking completed. No errors or warnings to show.-->
+<html lang = "ru" class="scrollbar_style">
+<head>
+    <meta charset="utf-8">
+    <!--- подключаем стили, пока обойдемся без шрифтов -->
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/scrollbar_style.css">   
+    <link rel="stylesheet" href="./css/day_and_night.css">  
+    <link rel="stylesheet" href="./css/footer.css">   
+    <link rel="stylesheet" href="./css/others.css">  
+    <link rel="stylesheet" href="./css/borders.css">   
+    <link rel="stylesheet" href="./css/images_nav.css">   
+    
+    <!-- закончили подключать стили, полззззем дальше -->
+    <script defer src="./js/day_or_night.js"></script>
+    <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
+        пихать скрипт в конец страницы )-->
+        
+    <title>Чешуя и когти</title>
+    <!-- у кого-то, возможно, "Рога и копыта"-->
+</head>
+<body >
+    <!-- шапка  -->
+    <header>
+        <!-- навигация  -->
+        <nav>        
+            <ul class="navigation_in_header">
+                <li><a href="#">Главная</a></li>
+                <li><a href="pages/game.html">Угадайка</a></li></li> 
+                <li><a href="pages/about_us.html">О нас</a></li>
+                <li><a href="pages/contacts.html">Контакты</a></li>
+                <li class="show_drop_list">
+                    <span>Сменить тему</span>
+                    <ul class="drop_down_list">
+                        <li id="day_style"><a href="#">Дневная</a></li>
+                        <li id="night_style"><a href="#">Ночная</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- пошел контент  -->
+    <main>
+        <div class="night_div main_content">
+            <h1>Добро пожаловать, путник!</h1>
+            
+            <p class="central_p">
+                ТЗ? Да кому оно нужно?! Мы можем сделать больше и даже бесплатно!!! <del>Особенно с JQuery и stackoverflow! (нет)</del> :)<br>
+            </p>
+            
+            
+            <div class="images_nav">
+                <div class="image_nav border1" id="game_img">
+                    <a href="pages/game.html">Я хочу сыграть с тобой...</a>
+                </div>
+                <div class="image_nav border1" id="about_img">
+                    <a href="pages/about_us.html">О нас</a>
+                </div>
+                <div class="image_nav border1" id="contacts_img">
+                    <a href="pages/contacts.html">Контакты</a>
+                </div>
+            </div>
+
+            <p>
+                Детально о проделанной работе:
+                <ul style="list-style-type: square;">
+                    <li>Структура проекта переделана в соответствии с предыдущими работами 
+                    (стили, смена темы, расположение скриптов, асинхронный вызов некоторых скриптов и т.д.).</li>
+                    <li>Добавлена кнопка, запускающая игру.</li> 
+                    <li>Bootstrap не "зашёл". Уже существующие элементы не были особо изменены, 
+                        но для alert и prompt использован js с изменением видимости.</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+    <!-- подвал. Оставим Skillfactory: красиво стоит -->
+    <footer>
+        <span>&copy;&nbsp;Skillfactory</span>
+        <span>Background by <a href="https://unsplash.com/@briantagalog?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brian Patrick Tagalog</a> 
+            on <a href="https://unsplash.com/photos/grayscale-photography-of-rock-formation-_8hGFBxWD0A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </span>
+        <span>Images for navigation generated on <a href="https://playground.com/create">playground.com</a></span>
+        <span>Resources for icon from <a href="https://ru.freepik.com/search">freepik.com</a> and composed by AncientGremlin</span>
+    </footer>
+</body>
+</html>

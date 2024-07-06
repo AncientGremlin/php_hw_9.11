@@ -1,0 +1,48 @@
+header {
+    padding-bottom: 50px;
+}
+
+.news_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /*400px - это слишком жирно */
+    background: url('../images/view-apocalyptic-dark-clouds_modified_by_ancient.png') center no-repeat;
+    background-size:cover;
+}
+header.news_header h1,
+header.real_news_header h1{
+    color:bisque;
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: -4px -1px 0 #000000ab, 2px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.real_news_header {
+    background: url('../images/ancient.png') no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-size: cover;
+}
+
+
+/* позаботимся об экранах поменьше */
+@media  (max-width: 3000px) {
+    .news_header{  
+        background-image: url('../images/view-apocalyptic-dark-clouds_edited_by_ancient_3000.png');
+    }   
+}
+
+@media  (max-width: 1280px) {
+    .news_header, .real_news_header {  
+        background-image: url('../images/view-apocalyptic-dark-clouds_W_1280.png');
+    }   
+}
+
+@media  (max-width: 1080px) {
+    .news_header, .real_news_header {  
+        background-image: url('../images/view-apocalyptic-dark-clouds_1080.png');
+    }   
+}

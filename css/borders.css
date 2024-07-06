@@ -1,0 +1,6 @@
+.border1 /*никакой фантазии */
+{
+    background: white;
+    border: 10px solid rgba(130, 129, 129, 0.3);
+    background-clip: content-box;      
+}

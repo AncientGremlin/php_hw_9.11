@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru" class="scrollbar_style">
+<head>
+    <meta charset="UTF-8">
+    <!--- подключаем стили, пока обойдемся без шрифтов -->
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/scrollbar_style.css">   
+    <link rel="stylesheet" href="../css/day_and_night.css">  
+    <link rel="stylesheet" href="../css/borders.css">   
+    <link rel="stylesheet" href="../css/footer.css">      
+    <link rel="stylesheet" href="../css/others.css">   
+    <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
+        пихать скрипт в конец страницы )-->
+    
+    <script defer src="../js/day_or_night.js"></script>
+    <title>Угадайка от Чешуя и когти.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/game.css" type="text/css"/>
+</head>
+<body >
+    <!-- шапка  -->
+    <header>
+        <!-- навигация  -->
+        <nav>        
+            <ul class="navigation_in_header">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./game.html">Угадайка</a></li>
+                <li><a href="./about_us.html">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="show_drop_list">
+                    <span>Сменить тему</span>
+                    <ul class="drop_down_list">
+                        <li id="day_style"><a href="#">Дневная</a></li>
+                        <li id="night_style"><a href="#">Ночная</a></li>
+                    </ul>
+                </li>              
+            </ul>
+        </nav>
+    </header>
+    <!-- пошел контент  -->
+    <main>
+            <div class="container">
+                <div class="row game-card align-items-center">
+                    <div class="col col-md-4" id="notSaw">
+                        <div class="card text-center night_div" id="beforeGameRunDiv">
+                            <div class="card-header">
+                                <p class="m-0">Приветствую!</p>
+                            </div>
+                            <div class="card-body">
+                                <span id="helloField"></span> ой, не то. 
+                                В общем, нажмите кнопочку ниже, а там по ходу дела разберёмся. 
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-link" id="btnStart">Начать...</button>
+                            </div>
+                        </div>
+                        <div class="card text-center night_div" id="insteadAlert">
+                            <div class="card-body">
+                                <span id="jokeField"></span> 
+                                <br><br>
+                                <span id="messageField"></span> <br>
+                                <label id="inputMinMax">
+                                    
+                                </label>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-link" id="bNext">Продолжить...</button>
+                            </div>
+                        </div>
+                        <div class="card text-center night_div" id="gameRunDiv">
+                            <div class="card-header">
+                                <p class="m-0">Вопрос №<span id="orderNumberField"></span></p>
+                            </div>
+                            <div class="card-body">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <h3 class="card-title m-0"><span id="answerField"></span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group">
+                                    <button class="btn btn-info" id="btnLess">&#129047;<br>меньше</button>
+                                    <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
+                                    <button class="btn btn-info" id="btnOver">больше<br>&#129045;</button>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-link" id="btnRetry">Заново</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </main>
+    <!-- подвал. Оставим Skillfactory: красиво стоит -->
+    <footer>
+        <span>&copy;&nbsp;Skillfactory</span>
+        <span> Background by <a href="https://unsplash.com/@briantagalog?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brian Patrick Tagalog</a> 
+            on <a href="https://unsplash.com/photos/grayscale-photography-of-rock-formation-_8hGFBxWD0A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </span>
+        <span>Resources for icon from <a href="https://ru.freepik.com/search">freepik.com</a> and composed by AncientGremlin</span>
+        <script src="../js/game.js"></script>
+    </footer>
+</body>
+</html>

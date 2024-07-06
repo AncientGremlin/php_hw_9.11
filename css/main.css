@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main_content {
+    margin: 40px;
+    padding: 10px;
+}
+
+.main_under_header{
+    padding: 10px;
+    margin: 0px 40px 40px 40px;
+}
+.main_under_header > p{
+    padding-top: 0;
+  
+}
+.main_content .central_p{
+    margin: 10px auto 10px auto;
+    width: fit-content;
+}
+
+.comment{
+    font-style: italic;
+    font-weight: 200;
+}
+
+#pos img{
+   height: fit-content;
+}
+
+address {
+    margin:10px; 
+    font-weight: 500;
+}
